@@ -14,7 +14,7 @@ using namespace chapter_1;
 using namespace chapter_2;
 
 int main() {
-cout << "testing";
+cout << "testing 2";
 	bool loop = true;
 
 	while (loop) {
