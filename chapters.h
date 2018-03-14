@@ -10,6 +10,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 
 namespace chapter_1 {
@@ -102,7 +103,43 @@ namespace chapter_2 {
 	};
 };
 
-namespace chapter_3{};
+namespace chapter_3 {
+	namespace arrays {
+		void allZeros();
+		void equalityTest();
+		void copyArrtoVec();
+		void copyVecToArr();
+	};
+
+	namespace iterators {
+		void printVectors();
+		void doubleVector();
+		void sumUp();
+		void clusterGrades();
+	};
+
+	namespace arrays2d {
+		void printArray();
+		void printArrayWithAuto();
+		void printArrayWithAliases();
+	};
+
+	namespace strings {
+		void readWords();
+		void readLines();
+		void areEqual();
+		void areLength();
+		void concatenate();
+		void capitalize();
+		void removePuncation();
+	};
+	namespace vectors {
+		void readIntegers();
+		void readStrings();
+		void toUpper();
+		void sumUp();
+	};
+};
 
 namespace chapter_4{};
 

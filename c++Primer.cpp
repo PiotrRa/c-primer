@@ -12,8 +12,10 @@
 using namespace std;
 using namespace chapter_1;
 using namespace chapter_2;
+using namespace chapter_3;
 
 int main() {
+
 cout << "testing 2";
 	bool loop = true;
 
@@ -52,6 +54,35 @@ cout << "testing 2";
 
 			break;
 
+		case 3:
+			arrays::allZeros();
+			arrays::equalityTest();
+			arrays::copyArrtoVec();
+			arrays::copyVecToArr();
+
+			iterators::printVectors();
+			iterators::doubleVector();
+			iterators::sumUp();
+			iterators::clusterGrades();
+
+			arrays2d::printArray();
+			arrays2d::printArrayWithAuto();
+			arrays2d::printArrayWithAliases();
+
+			strings::readWords();
+			strings::readLines();
+			strings::areEqual();
+			strings::areLength();
+			strings::concatenate();
+			strings::capitalize();
+			strings::removePuncation();
+
+			vectors::readIntegers();
+			vectors::readStrings();
+			vectors::toUpper();
+			vectors::sumUp();
+
+			break;
 		}
 		cout << "\nDo you want to continue? yes/no" << endl;
 		string answer;
