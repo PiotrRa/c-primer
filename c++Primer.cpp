@@ -14,6 +14,7 @@ using namespace chapter_1;
 using namespace chapter_2;
 using namespace chapter_3;
 using namespace chapter_4;
+using namespace chapter_5;
 
 int main() {
 
@@ -86,8 +87,18 @@ cout << "testing 2";
 			break;
 
 		case 4:
-
 			expresions::expresions();
+			break;
+
+		case 5:
+			exceptions::exceptions();
+
+			statements::gradesIfElse();
+			statements::gradesOperator();
+			statements::vowelCounting();
+			statements::countRepeated();
+			statements::findPrefix();
+
 			break;
 		}
 		cout << "\nDo you want to continue? yes/no" << endl;

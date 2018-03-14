@@ -11,6 +11,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <stdexcept>
+
 
 
 namespace chapter_1 {
@@ -148,7 +150,19 @@ namespace chapter_4 {
 	};
 };
 
-namespace chapter_5{};
+namespace chapter_5{
+	namespace exceptions {
+		void exceptions();
+	};
+	namespace statements {
+
+	void gradesIfElse();
+	void gradesOperator();
+	void vowelCounting();
+	void countRepeated();
+	void findPrefix();
+	};
+};
 
 namespace chapter_6{};
 
