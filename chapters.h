@@ -141,7 +141,12 @@ namespace chapter_3 {
 	};
 };
 
-namespace chapter_4{};
+namespace chapter_4 {
+	namespace expresions{
+		int* getPtr();
+		void expresions();
+	};
+};
 
 namespace chapter_5{};
 

@@ -13,6 +13,7 @@ using namespace std;
 using namespace chapter_1;
 using namespace chapter_2;
 using namespace chapter_3;
+using namespace chapter_4;
 
 int main() {
 
@@ -82,6 +83,11 @@ cout << "testing 2";
 			vectors::toUpper();
 			vectors::sumUp();
 
+			break;
+
+		case 4:
+
+			expresions::expresions();
 			break;
 		}
 		cout << "\nDo you want to continue? yes/no" << endl;
