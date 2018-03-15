@@ -118,7 +118,11 @@ int main() {
 			chapter_7::constructors::constructors();
 			chapter_7::special_features::special_features();
 
-		break;
+			break;
+		case 8:
+			chapter_8::io_classes::io_classes();
+			chapter_8::io_files::io_files();
+			break;
 		}
 
 		cout << "\nDo you want to continue? yes/no" << endl;
