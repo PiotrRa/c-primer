@@ -16,6 +16,7 @@ using namespace chapter_3;
 using namespace chapter_4;
 using namespace chapter_5;
 using namespace chapter_6;
+using namespace chapter_7;
 
 
 int main() {
@@ -40,77 +41,84 @@ int main() {
 		cin.ignore(999, '\n');
 		switch (choice) {
 		case 1:
-			bookstore();
+			chapter_1::bookstore();
 			break;
 		case 2:
-			built_in_types::autoExamples();
-			built_in_types::decltypeExamples();
-			built_in_types::initialization();
-			built_in_types::unsignedTypes();
+			chapter_2::built_in_types::autoExamples();
+			chapter_2::built_in_types::decltypeExamples();
+			chapter_2::built_in_types::initialization();
+			chapter_2::built_in_types::unsignedTypes();
 
-			literals::escapeCharacters();
-			literals::values();
+			chapter_2::literals::escapeCharacters();
+			chapter_2::literals::values();
 
-			pointers::compoundDeclarations();
-			pointers::doublePointers();
-			pointers::references();
+			chapter_2::pointers::compoundDeclarations();
+			chapter_2::pointers::doublePointers();
+			chapter_2::pointers::references();
 
 			break;
 
 		case 3:
-			arrays::allZeros();
-			arrays::equalityTest();
-			arrays::copyArrtoVec();
-			arrays::copyVecToArr();
+			chapter_3::arrays::allZeros();
+			chapter_3::arrays::equalityTest();
+			chapter_3::arrays::copyArrtoVec();
+			chapter_3::arrays::copyVecToArr();
 
-			iterators::printVectors();
-			iterators::doubleVector();
-			iterators::sumUp();
-			iterators::clusterGrades();
+			chapter_3::iterators::printVectors();
+			chapter_3::iterators::doubleVector();
+			chapter_3::iterators::sumUp();
+			chapter_3::iterators::clusterGrades();
 
-			arrays2d::printArray();
-			arrays2d::printArrayWithAuto();
-			arrays2d::printArrayWithAliases();
+			chapter_3::arrays2d::printArray();
+			chapter_3::arrays2d::printArrayWithAuto();
+			chapter_3::arrays2d::printArrayWithAliases();
 
-			strings::readWords();
-			strings::readLines();
-			strings::areEqual();
-			strings::areLength();
-			strings::concatenate();
-			strings::capitalize();
+			chapter_3::strings::readWords();
+			chapter_3::strings::readLines();
+			chapter_3::strings::areEqual();
+			chapter_3::strings::areLength();
+			chapter_3::strings::concatenate();
+			chapter_3::strings::capitalize();
 			strings::removePuncation();
 
-			vectors::readIntegers();
-			vectors::readStrings();
-			vectors::toUpper();
-			vectors::sumUp();
+			chapter_3::vectors::readIntegers();
+			chapter_3::vectors::readStrings();
+			chapter_3::vectors::toUpper();
+			chapter_3::vectors::sumUp();
 
 			break;
 
 		case 4:
-			expresions::expresions();
+			chapter_4::expresions::expresions();
 			break;
 
 		case 5:
 
-			exceptions::exceptions();
+			chapter_5::exceptions::exceptions();
 
-			statements::gradesIfElse();
-			statements::gradesOperator();
-			statements::vowelCounting();
-			statements::countRepeated();
-			statements::findPrefix();
+			chapter_5::statements::gradesIfElse();
+			chapter_5::statements::gradesOperator();
+			chapter_5::statements::vowelCounting();
+			chapter_5::statements::countRepeated();
+			chapter_5::statements::findPrefix();
 
 			break;
 
 		case 6:
 
-			functions::matching();
-			functions::passing_args();
-			//functions::return_val(); --broken
-			functions::pointers();
-			functions::special_features();
+			chapter_6::functions::matching();
+			chapter_6::functions::passing_args();
+			//chapter_6::functions::return_val(); --broken
+			chapter_6::functions::pointers();
+			chapter_6::functions::special_features();
 			break;
+
+		case 7:
+			chapter_7::classes::classes();
+			chapter_7::constructors::constructors();
+			chapter_7::special_features::special_features();
+
+		break;
 		}
 
 		cout << "\nDo you want to continue? yes/no" << endl;
