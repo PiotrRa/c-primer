@@ -15,10 +15,11 @@ using namespace chapter_2;
 using namespace chapter_3;
 using namespace chapter_4;
 using namespace chapter_5;
+using namespace chapter_6;
+
 
 int main() {
 
-cout << "testing 2";
 	bool loop = true;
 
 	while (loop) {
@@ -91,6 +92,7 @@ cout << "testing 2";
 			break;
 
 		case 5:
+
 			exceptions::exceptions();
 
 			statements::gradesIfElse();
@@ -100,9 +102,22 @@ cout << "testing 2";
 			statements::findPrefix();
 
 			break;
+
+		case 6:
+
+			functions::matching();
+			functions::passing_args();
+			//functions::return_val(); --broken
+			functions::pointers();
+			functions::special_features();
+			break;
 		}
+
 		cout << "\nDo you want to continue? yes/no" << endl;
+
 		string answer;
+		cin.clear();
+		cin.ignore(999, '\n');
 		getline(cin, answer);
 		if (answer == "no") {
 			loop = false;
