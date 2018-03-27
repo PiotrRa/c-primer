@@ -123,6 +123,13 @@ int main() {
 			chapter_8::io_classes::io_classes();
 			chapter_8::io_files::io_files();
 			break;
+		case 9:
+			chapter_9::seq_containers::overview();
+			chapter_9::seq_containers::operation();
+			chapter_9::seq_containers::stringOperation();
+			break;
+		default:
+			break;
 		}
 
 		cout << "\nDo you want to continue? yes/no" << endl;
